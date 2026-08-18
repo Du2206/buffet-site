@@ -280,6 +280,22 @@
     .ev-card{grid-template-columns:96px 1fr;}
     .ft-top{grid-template-columns:1fr;}
   }
+  /* no celular tudo centralizado */
+  @media (max-width:700px){
+    .ft-top{text-align:center;}
+    .ft-brand{display:flex;flex-direction:column;align-items:center;}
+    .ft-social{justify-content:center;flex-wrap:wrap;}
+    .ft-phone{justify-content:center;}
+    .ft-phone .ft-u{min-width:0;}
+    .ft-col{display:flex;flex-direction:column;align-items:center;}
+    .ft-bottom{flex-direction:column;gap:8px;text-align:center;}
+    .ev-head{flex-direction:column;align-items:center;text-align:center;gap:14px;}
+    .unit{align-items:center;text-align:center;}
+    .unit .u-acoes{align-items:center;}
+    .unit .u-mapa{align-self:center;}
+    .space-copy{text-align:center;display:flex;flex-direction:column;align-items:center;}
+    .ed-right{text-align:center;}
+  }
   /* navegação multi-página */
   .nav-links a.active{color:#fff;font-weight:600;}
   header.nav.scrolled .nav-links a.active{color:var(--ink);}
