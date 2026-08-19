@@ -236,17 +236,18 @@
   .ft-phone .ft-u{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);font-weight:600;min-width:64px;}
   /* unidades (pagina de contato) */
   .unit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-  .unit{border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);padding:30px 28px;display:flex;flex-direction:column;}
+  .ev-head.centro{justify-content:center;text-align:center;}
+  .unit{border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);padding:30px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;}
   .unit h3{font-family:var(--ff-head);font-size:25px;font-weight:600;letter-spacing:-.01em;}
   .unit .u-txt{margin-top:10px;color:var(--ink-soft);font-size:15px;}
   .unit .u-end{margin-top:16px;font-size:14px;color:var(--ink-soft);}
   .unit .u-end .u-cidade{display:block;color:var(--ink-2);}
-  .unit .u-acoes{margin-top:auto;padding-top:22px;display:flex;flex-direction:column;gap:12px;align-items:flex-start;}
+  .unit .u-acoes{margin-top:auto;padding-top:22px;display:flex;flex-direction:column;gap:12px;align-items:center;}
   .unit .u-ig{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--ink);}
   .unit .u-ig svg{width:17px;height:17px;fill:currentColor;}
   .unit .u-ig:hover{color:var(--accent);}
   .unit .u-mapa-box{width:100%;aspect-ratio:16/10;border:1px solid var(--line);border-radius:12px;margin-top:20px;display:block;}
-  .unit .u-mapa{margin-top:12px;font-size:13px;color:var(--ink-2);border-bottom:1px solid var(--line);align-self:flex-start;}
+  .unit .u-mapa{margin-top:12px;font-size:13px;color:var(--ink-2);border-bottom:1px solid var(--line);align-self:center;}
   .unit .u-mapa:hover{color:var(--accent);border-color:var(--accent);}
   @media (max-width:900px){.unit-grid{grid-template-columns:1fr;}}
   .ft-col h4{font-family:var(--ff-sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);font-weight:700;margin:0 0 16px;}
