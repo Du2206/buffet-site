@@ -111,8 +111,8 @@
     l.addEventListener("click",function(e){if(e.target.tagName==="A")l.classList.remove("open");});})();
   (function(){var els=document.querySelectorAll(".reveal");
     if(!("IntersectionObserver" in window)||window.matchMedia("(prefers-reduced-motion: reduce)").matches){els.forEach(function(e){e.classList.add("in");});return;}
-    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target);}});},{threshold:0.12,rootMargin:"0px 0px -8% 0px"});
-    els.forEach(function(e){io.observe(e);});})();
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target);}});},{threshold:0.01,rootMargin:"200px 0px 0px 0px"});
+    els.forEach(function(e){io.observe(e);});setTimeout(function(){els.forEach(function(e){e.classList.add("in");});},2500);})();
   (function(){var v=document.querySelector(".hero-vid");if(!v)return;
     v.muted=true;v.defaultMuted=true;
     var go=function(){var p=v.play();if(p&&p.catch)p.catch(function(){});};

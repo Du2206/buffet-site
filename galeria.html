@@ -41,9 +41,9 @@
       </div>
       <div class="gallery reveal">
         <div class="gtile t1"><div class="slot"><img src="gal-cerimonia-por-do-sol.jpg" alt="Cerimônia ao ar livre no fim da tarde, entre palmeiras" /></div></div>
-        <div class="gtile"><div class="slot"><img src="gal-coracao.jpg" alt="Noivos diante do coração iluminado" loading="lazy" /></div></div>
-        <div class="gtile"><div class="slot"><img src="gal-noiva-noite.jpg" alt="Noiva com véu ao vento no jardim à noite" loading="lazy" /></div></div>
-        <div class="gtile"><div class="slot"><img src="gal-casal-por-do-sol.jpg" alt="Casal abraçado com o pôr do sol ao fundo" loading="lazy" /></div></div>
+        <div class="gtile"><div class="slot"><img src="gal-coracao.jpg" alt="Noivos diante do coração iluminado" /></div></div>
+        <div class="gtile"><div class="slot"><img src="gal-noiva-noite.jpg" alt="Noiva com véu ao vento no jardim à noite" /></div></div>
+        <div class="gtile"><div class="slot"><img src="gal-casal-por-do-sol.jpg" alt="Casal abraçado com o pôr do sol ao fundo" /></div></div>
         <div class="gtile"><div class="slot"><img src="gal-debutante.jpg" alt="Debutante de vestido verde-água diante do neon Espaço Rafah" loading="lazy" /></div></div>
         <div class="gtile"><div class="slot"><img src="gal-mesa-posta.jpg" alt="Mesa posta com louça branca e guardanapos lilás" loading="lazy" /></div></div>
         <div class="gtile"><div class="slot"><img src="gal-bolo.jpg" alt="Bolo de casamento de cinco andares" loading="lazy" /></div></div>
@@ -109,8 +109,8 @@
     l.addEventListener("click",function(e){if(e.target.tagName==="A")l.classList.remove("open");});})();
   (function(){var els=document.querySelectorAll(".reveal");
     if(!("IntersectionObserver" in window)||window.matchMedia("(prefers-reduced-motion: reduce)").matches){els.forEach(function(e){e.classList.add("in");});return;}
-    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target);}});},{threshold:0.12,rootMargin:"0px 0px -8% 0px"});
-    els.forEach(function(e){io.observe(e);});})();
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target);}});},{threshold:0.01,rootMargin:"200px 0px 0px 0px"});
+    els.forEach(function(e){io.observe(e);});setTimeout(function(){els.forEach(function(e){e.classList.add("in");});},2500);})();
   (function(){var v=document.querySelector(".hero-vid");if(!v)return;
     v.muted=true;v.defaultMuted=true;
     var go=function(){var p=v.play();if(p&&p.catch)p.catch(function(){});};
